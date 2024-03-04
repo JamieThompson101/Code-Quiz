@@ -217,3 +217,63 @@ window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");
 };
+function displayScore () {
+    questionConEl.replaceWith(scorePageEl);
+    scoreAreaEl.innerText = "Final Score:" + score;
+     // Create an input element for initials 
+    initTextEl = document.createElement("input"); 
+    initTextEl.setAttribute("id", "initails-input"); 
+    initTextEl.setAttribute("type", "text"); 
+    initTextEl.setAttribute("name", "iniatials"); 
+    initTextEl.setAttribute("placeholder", "Enter Initials here"); 
+      
+    inNameEl.appendChild(initTextEl);
+
+
+    // create save button elemetn
+    saveButtonEl = document.createElement("button");
+    saveButtonEl.setAttribute("id" , "save-btn");
+    saveButtonEl.setAttribute("class" ,"save-btn");
+    saveButtonEl.setAttribute("type" , "submit");
+    saveButtonEl.textContent = "Save Score";
+
+    inNameEl.appendChild(saveButtonEl);
+
+    inNameEl.addEventListener("submit", viewHighScores);
+}
+
+function viewHighScores (e) { 
+  e.preventDefault();
+    var name = document.querySelector("#initails-input").value;
+    savedInit(name);
+    
+    scorePageEl.replaceWith(highScoreEl)
+    loadSaveScores();
+  
+}
+
+
+//function to save task in local storage 
+var savedScore = function() {
+    localStorage.setItem("score", JSON.stringify(score));
+}
+var savedInit = function(initails) {
+    localStorage.setItem("initails", JSON.stringify(initails));
+}
+
+// gets tasks from local storage and load them
+function loadSaveScores() {
+    // get tasks items from local stroage
+    var savedScore = localStorage.getItem("score");
+    var savedInit = localStorage.getItem("initails");
+
+    savedScore  = JSON.parse(savedScore);
+    savedInit = JSON.parse(savedInit);
+
+    document.getElementById("highScores").innerHTML = savedInit + " - " + savedScore;
+   
+}   
+
+
+//event listeners
+startButtonEl.addEventListener("click", startQuiz);
