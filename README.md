@@ -6,6 +6,12 @@ AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
+#Motivators and what I learned
+
+The reason as to why I created this project is because I wanted to further hone my skills with JavaScript and how the coding language adds interactivity to a website.
+
+I learned the importance and versatility of functions, objects, variables, etc.
+
 #Acceptance Criteria
 
 GIVEN I am taking a code quiz
