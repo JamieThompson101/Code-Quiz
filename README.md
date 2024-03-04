@@ -28,4 +28,5 @@ THEN I can save my initials and score
 
 ##Credits:
 [link to the source code](https://codingtorque.com/quiz-app-using-javascript/)
+
 [JavaScript code](https://stackoverflow.com/questions/66488667/javascript-how-do-i-save-the-score-and-initials-once-the-page-is-refreshed-and)
