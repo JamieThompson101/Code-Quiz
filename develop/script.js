@@ -19,21 +19,21 @@ let countdown;
 const quizArray = [
     {
         id: "0",
-        question: "Which is the most widely spoken language in the world?",
-        options: ["Spanish", "Mandarin", "English", "German"],
-        correct: "Mandarin",
+        question: "String values must be enclosed within what when being assigned to variables?",
+        options: ["Commas", "Curly Brackets", "Quotes", "Parentheses"],
+        correct: "Quotes",
     },
     {
         id: "1",
-        question: "Which is the only continent in the world without a desert?",
-        options: ["North America", "Asia", "Africa", "Europe"],
-        correct: "Europe",
+        question: "Arrays in JavaScript are used to store what?",
+        options: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
+        correct: "All of the above",
     },
     {
         id: "2",
-        question: "Who invented Computer?",
-        options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
-        correct: "Charles Babbage",
+        question: "Commonly used data types DO NOT include what?",
+        options: ["Strings", "Booleans", "Alerts", "Numbers"],
+        correct: "Alerts",
     },
     {
         id: "3",
@@ -43,9 +43,9 @@ const quizArray = [
     },
     {
         id: "4",
-        question: "Hardware devices that are not part of the main computer system and are often added later to the system.",
-        options: ["Peripheral", "Clip art", "Highlight", "Execute"],
-        correct: "Peripheral",
+        question: "The condition in an if/else statement is enclosed by what?",
+        options: ["Parentheses", "Curly Brackets", "Quotes", "Numbers"],
+        correct: "Parentheses",
     },
     {
         id: "5",
