@@ -36,3 +36,5 @@ THEN I can save my initials and score
 ##Features
 
 This application features simple event listeners for clicking the buttons displayed on the web page.
+
+![codingquiz](https://github.com/JamieThompson101/Code-Quiz/assets/130515437/10b6484d-c094-412c-9e28-c78af58cefc2)
